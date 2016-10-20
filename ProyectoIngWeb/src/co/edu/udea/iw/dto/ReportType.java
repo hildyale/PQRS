@@ -17,7 +17,6 @@ public class ReportType {
 	 
 	 
 	public ReportType(String id, String name) {
-		super();
 		this.id = id;
 		this.name = name;
 	}

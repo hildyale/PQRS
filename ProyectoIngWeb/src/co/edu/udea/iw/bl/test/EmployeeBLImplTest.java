@@ -22,13 +22,12 @@ public class EmployeeBLImplTest {
 	@Test
 	public void testCrearempleado() {
 		try{
-			String a = "alejo";
+			String a = "alejo4";
 			Double b = 0.0;
 			employeeBL.crearEmpleado(a,a,a,b,a,a);
 			
 		}catch(MyDaoException | NullPointerException e){
 			fail(e.getMessage());
-			e.printStackTrace();
 		}
 		
 	}
@@ -36,8 +35,20 @@ public class EmployeeBLImplTest {
 	@Test
 	public void validar() {
 		try{
-			String a = "alejo";
+			String a = "alejo4";
 			employeeBL.validarEmpleado(a,a);
+			
+		}catch(MyDaoException | NullPointerException e){
+			fail(e.getMessage());
+		}
+		
+	}
+	
+	@Test
+	public void eliminar() {
+		try{
+			String a = "alejo4";
+			employeeBL.eliminarEmpleado(a);
 			
 		}catch(MyDaoException | NullPointerException e){
 			fail(e.getMessage());

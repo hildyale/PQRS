@@ -12,22 +12,22 @@ public class Report {
 	 String id;
 	 String description;
 	 String status;
-	 ReportType id_rt;
-	 Employee id_emp;
-	 User id_user;
-	 Date create_date; // se le debe pasar la hora actual del servidor en el constructor no deberia de ir
+	 ReportType idReportType;
+	 Employee idEmployee;
+	 User idUser;
+	 Date createDate; // se le debe pasar la hora actual del servidor en el constructor no deberia de ir
 	 String response;
 	 
-	public Report(String id, String description, String status, ReportType id_rt, Employee id_emp, User id_user,
-			Date create_date) {
+	public Report(String id, String description, String status, ReportType idReportType, Employee idEmployee, User idUser,
+			Date createDate) {
 		super();
 		this.id = id;
 		this.description = description;
 		this.status = status;
-		this.id_rt = id_rt;
-		this.id_emp = id_emp;
-		this.id_user = id_user;
-		this.create_date = create_date;
+		this.idReportType = idReportType;
+		this.idEmployee = idEmployee;
+		this.idUser = idUser;
+		this.createDate = createDate;
 	}
 	
 	
@@ -49,29 +49,29 @@ public class Report {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public ReportType getId_rt() {
-		return id_rt;
+	public ReportType getidReportType() {
+		return idReportType;
 	}
-	public void setId_rt(ReportType id_rt) {
-		this.id_rt = id_rt;
+	public void setidReportType(ReportType idReportType) {
+		this.idReportType = idReportType;
 	}
-	public Employee getId_emp() {
-		return id_emp;
+	public Employee getidEmployee() {
+		return idEmployee;
 	}
-	public void setId_emp(Employee id_emp) {
-		this.id_emp = id_emp;
+	public void setidEmployee(Employee idEmployee) {
+		this.idEmployee = idEmployee;
 	}
-	public User getId_user() {
-		return id_user;
+	public User getidUser() {
+		return idUser;
 	}
-	public void setId_user(User id_user) {
-		this.id_user = id_user;
+	public void setidUser(User idUser) {
+		this.idUser = idUser;
 	}
-	public Date getCreate_date() {
-		return create_date;
+	public Date getcreateDate() {
+		return createDate;
 	}
-	public void setCreate_date(Date create_date) {
-		this.create_date = create_date;
+	public void setcreateDate(Date createDate) {
+		this.createDate = createDate;
 	}
 	public String getResponse() {
 		return response;

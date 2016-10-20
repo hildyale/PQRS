@@ -33,7 +33,7 @@ public class EmployeeBLImpl implements EmployeeBL {
 		Employee empleado = EmployeeDao.getEmployeeByEmal(email);
 		
 		if (empleado  == null){
-			throw new MyDaoException("El usuario crea no existe");
+			throw new MyDaoException("El usuario no existe");
 		}
 		
 		String pass = empleado.getPassword();
@@ -69,14 +69,19 @@ public class EmployeeBLImpl implements EmployeeBL {
 			throw new NullPointerException("Debe especificar la contrasena del empleado.");
         }
 		
-
-	    Employee empleado = new Employee();
+        
+		Employee empleado = EmployeeDao.getEmployeeById(cedula);
+		if(empleado != null){
+			throw new MyDaoException("Ya existe un empleado con esta cedula.");
+		}
+		
+	    empleado = new Employee();
 	    empleado.setId(cedula);
 	    empleado.setName(name);
-	    empleado.setLast_name(lastname);
+	    empleado.setLastname(lastname);
 	    empleado.setEmail(email);
 	    empleado.setPassword(password);
-	    empleado.setStart_date(new Date());
+	    empleado.setStartDate(new Date());
 	    empleado.setSalary(salary);
 	    
 	    EmployeeDao.saveEmployee(empleado);
@@ -90,6 +95,9 @@ public class EmployeeBLImpl implements EmployeeBL {
         }
 		
 		Employee empleado = EmployeeDao.getEmployeeByEmal(email);
+		if(empleado == null){
+			throw new MyDaoException("No existe un empleado con este email.");
+		}
 		String id = empleado.getId();
 		EmployeeDao.deleteEmployee(id);
 		
@@ -106,6 +114,9 @@ public class EmployeeBLImpl implements EmployeeBL {
         }
 		
 		Employee empleado = EmployeeDao.getEmployeeByEmal(email);
+		if(empleado == null){
+			throw new MyDaoException("No existe un empleado con este email.");
+		}
 		
 		if (!(name == null || "".equals(name.trim()))) {
 			empleado.setName(name);

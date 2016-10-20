@@ -10,7 +10,7 @@ public class User {
 	
 	String id;
 	String name;
-	String last_name;
+	String lastname;
 	String phone;
 	String city;
 	String password;
@@ -22,11 +22,11 @@ public class User {
 		super();
 	}
 
-	public User(String id, String name, String last_name, String phone, String city, String password, String email) {
+	public User(String id, String name, String lastname, String phone, String city, String password, String email) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.last_name = last_name;
+		this.lastname = lastname;
 		this.phone = phone;
 		this.city = city;
 		this.password = password;
@@ -49,12 +49,12 @@ public class User {
 		this.name = name;
 	}
 
-	public String getLast_name() {
-		return last_name;
+	public String getlastname() {
+		return lastname;
 	}
 
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+	public void setlastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getPhone() {

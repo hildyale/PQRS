@@ -12,25 +12,25 @@ public class Employee {
 	
 	String id;
 	String name;
-	String last_name;
+	String lastname;
 	double salary;
 	String email;
-	Date start_date;
+	Date startDate;
 	String password;
 	
 	public Employee() {
 		super();
 	}
 
-	public Employee(String id, String name, String last_name, double salary, String email, Date start_date,
+	public Employee(String id, String name, String lastname, double salary, String email, Date startDate,
 			String password) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.last_name = last_name;
+		this.lastname = lastname;
 		this.salary = salary;
 		this.email = email;
-		this.start_date = start_date;
+		this.startDate = startDate;
 		this.password = password;
 	}
 	
@@ -46,11 +46,11 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getLast_name() {
-		return last_name;
+	public String getLastname() {
+		return lastname;
 	}
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 	public double getSalary() {
 		return salary;
@@ -64,11 +64,11 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getStart_date() {
-		return start_date;
+	public Date getStartDate() {
+		return startDate;
 	}
-	public void setStart_date(Date start_date) {
-		this.start_date = start_date;
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
 	}
 	public String getPassword() {
 		return password;
