@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20-oct-2016 2:30:58 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="co.edu.udea.iw.dto.Report" table="REPORT">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <many-to-one name="id_rt" class="co.edu.udea.iw.dto.ReportType" fetch="join">
+            <column name="id_report_type" />
+        </many-to-one>
+        <many-to-one name="id_emp" class="co.edu.udea.iw.dto.Employee" fetch="join">
+            <column name="ID_EMP" />
+        </many-to-one>
+        <many-to-one name="id_user" class="co.edu.udea.iw.dto.User" fetch="join">
+            <column name="ID_USER" />
+        </many-to-one>
+        <property name="create_date" type="java.util.Date">
+            <column name="CREATE_DATE" />
+        </property>
+        <property name="response" type="java.lang.String">
+            <column name="response" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
