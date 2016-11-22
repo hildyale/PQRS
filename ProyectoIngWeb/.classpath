@@ -8,10 +8,10 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/estudiantelis/Descargas/proyecto_ingweb/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/home/estudiantelis/Descargas/proyecto_ingweb/lib/mysql-connector-java-5.1.22-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jersey"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring"/>
-	<classpathentry kind="lib" path="D:/Documentos/Eclipse Projects/proyecto/lib/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="D:/Documentos/Eclipse Projects/proyecto/lib/mysql-connector-java-5.1.22-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

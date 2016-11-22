@@ -56,7 +56,7 @@ public class ReportDaoImpl implements ReportDao {
 		
 		try {
 			session = sessionFactory.openSession();
-			Criteria crit = session.createCriteria(Report.class).add( Property.forName("status").eq("pendiente"));
+			Criteria crit = session.createCriteria(Report.class).add( Property.forName("status").eq("Pendiente"));
 			ReportsPending = crit.list(); 
 			
 		} catch (HibernateException e) {

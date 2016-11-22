@@ -9,12 +9,12 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Documentos/Eclipse Projects/proyecto/lib/log4j-1.2.17.jar">
+	<classpathentry kind="lib" path="/home/estudiantelis/Descargas/proyecto_ingweb/lib/log4j-1.2.17.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Documentos/Eclipse Projects/proyecto/lib/mysql-connector-java-5.1.22-bin.jar">
+	<classpathentry kind="lib" path="/home/estudiantelis/Descargas/proyecto_ingweb/lib/mysql-connector-java-5.1.22-bin.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
