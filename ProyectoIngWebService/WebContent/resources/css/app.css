@@ -1,0 +1,25 @@
+html
+{
+    position: relative; 
+    min-height: 100%;
+}
+body
+{
+    margin: 0 0 65px;
+}
+
+footer
+{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 40px;
+    padding: 10px;
+    background: #f7f7f7;
+}
+
+.abajo
+{
+    bottom: 0;
+    
+}
