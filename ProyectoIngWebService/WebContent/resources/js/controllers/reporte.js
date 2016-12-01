@@ -1,40 +1,15 @@
 /**
- * Script en el cual se desarrola la logica del negocio usando angularjs
- * autor:Alejandro Isaza Delgado - alejandro.isazad@udea.edu.co
+ * Script en el cual se desarrola la logica del negocio para el manejo de los reportes usando angularjs
+ * autor:Santiago Ramirez Acevedo- Santiago.ramireza@udea.edu.co
 
  */
 
 var modulo = angular.module('app');
 
-modulo.controller('demoController', function($rootScope,$modal) {
-    this.message = 'It works!';
-
-    $rootScope.modal = function() {
-			console.log('epa');
-		  $modal.open({
-			  templateUrl: '../resources/views/templates/yesno.html',
-		        resolve: {
-		          key: function() {
-		            return key;
-		          }
-		        }
-		  });
-		}
-  });
-  
-
 
 modulo.controller('reporte', function($rootScope,$scope,$state,reporte) {
 	
-	    
-	    
-	    $scope.eliminar = function(){
-	    	
-	    }
 
-	    $scope.crear = function(){
-
-        };
         
         $scope.detalles = function(report){
         	if($rootScope.currentUser.tipo == 'employee'){

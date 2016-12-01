@@ -1,3 +1,10 @@
+/**
+ * Script en el cual se desarrola la logica del negocio usando angularjs
+ * autor:Alejandro Isaza Delgado - alejandro.isazad@udea.edu.co
+
+ */
+
+
 var modulo = angular.module('app');
 
 modulo.service('reporte',function($http){

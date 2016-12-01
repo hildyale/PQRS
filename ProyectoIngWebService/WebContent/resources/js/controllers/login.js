@@ -1,5 +1,5 @@
 /**
- * Script en el cual se desarrola la logica del negocio usando angularjs
+ * Script en el cual se desarrola la logica del negocio en la que se autentica un usuario o un empleado usando angularjs
  * autor:Alejandro Isaza Delgado - alejandro.isazad@udea.edu.co
 
  */

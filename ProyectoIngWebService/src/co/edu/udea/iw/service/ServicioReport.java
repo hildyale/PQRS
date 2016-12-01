@@ -96,6 +96,7 @@ public class ServicioReport {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("listar")
 	public List<ReportWs> obtenerReportesPendientes() throws MyDaoException, BLException{
+		
 		List<ReportWs> resultado = new ArrayList<>();
 		List<Report> datos = null;
 		

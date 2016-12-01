@@ -24,6 +24,7 @@
 </head>
 
 <body ng-app="app">
+    <div class="header"></div>
     <div ng-if="header == 'offline'" ng-include="'../resources/views/templates/headerOffline.html'"></div>
     <div ng-if="header == 'employee'" ng-include="'../resources/views/templates/headerEmployee.html'"></div>
     <div ng-if="header == 'user'" ng-include="'../resources/views/templates/headerUser.html'"></div>
@@ -33,14 +34,13 @@
      <!-- Archivos javascript usados -->
 
 <!-- Angular -->
-<script type="text/javascript" src="../resources/js/angular.min.js"></script>
-<script type="text/javascript" src="../resources/js/angular-ui-router.min.js"></script>
-<script type="text/javascript" src="../resources/js/ngDialog.js"></script>
-<script type="text/javascript" src="../resources/js/angular-animate.js"></script>
-<script type="text/javascript" src="../resources/js/angular-touch.js"></script>
+<script type="text/javascript" src="../resources/js/lib/angular.min.js"></script>
+<script type="text/javascript" src="../resources/js/lib/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="../resources/js/lib/angular-animate.js"></script>
+<script type="text/javascript" src="../resources/js/lib/angular-touch.js"></script>
 
 <!-- app -->
-<script type="text/javascript" src="../resources/js/app.js"></script>
+<script type="text/javascript" src="../resources/js/lib/app.js"></script>
 
 <!-- Controllers -->
 <script type="text/javascript" src="../resources/js/controllers/HomeController.js"></script>

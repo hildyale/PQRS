@@ -1,3 +1,9 @@
+/**
+ * Script en el cual se desarrola la logica del negocio para registrar y actualizar un empleado o un usuario usando angularjs
+ * autor:Cristian Camilo Isaza - cristiac.isaza@udea.edu.co
+
+ */
+
 var modulo = angular.module('app');
 
 modulo.service('usuario',function($http){
@@ -43,7 +49,7 @@ modulo.service('usuario',function($http){
     				   phone : phone,
     				   city : city,
     				   email: email,
-    				   password : pass,
+    				   pass : pass,
     				   id : id
     			          }
     			   }

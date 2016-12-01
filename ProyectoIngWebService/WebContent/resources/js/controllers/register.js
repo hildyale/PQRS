@@ -1,6 +1,6 @@
 /**
- * Script en el cual se desarrola la logica del negocio usando angularjs
- * autor:Alejandro Isaza Delgado - alejandro.isazad@udea.edu.co
+ * Script en el cual se desarrola la logica del negocio para registrar y actualizar un empleado o un usuario usando angularjs
+ * autor:Cristian Camilo Isaza - cristiac.isaza@udea.edu.co
 
  */
 
@@ -19,7 +19,7 @@ modulo.controller('register',  function($rootScope,$scope,$state,usuario,emplead
 		var id = $rootScope.currentUser.id;
     
     	if($rootScope.currentUser.tipo == 'employee' ){
-    		if(email ==null && pass ==null && salary ==null || email =='' && pass =='' && phone =='' && city =='' ){
+    		if(email ==null && pass ==null && salary ==null || email =='' && pass =='' && salary ==''){
 			    $scope.resultado = 'debe llenar algun campo';
     		}else{
     			usuario.actualizar(id,email,pass,salary).success(function (data){

@@ -1,3 +1,10 @@
+/**
+ * Script en el cual se desarrola la logica del negocio para el manejo de los reportes usando angularjs
+ * autor:Santiago Ramirez Acevedo- Santiago.ramireza@udea.edu.co
+
+ */
+
+
 var modulo = angular.module('app');
 
 modulo.service('empleado',function($http){
@@ -42,7 +49,7 @@ modulo.service('empleado',function($http){
   			   method: 'POST',
   			   url: url+'/crear',
   			   params: { 
-  				   salario: salary,
+  				   salary: salary,
   				   email: email,
   				   pass : pass,
   				   id: id
